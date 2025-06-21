@@ -1,0 +1,56 @@
+body {
+  font-family: Arial, sans-serif;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+.order-container {
+  background: white;
+  padding: 40px;
+  border-radius: 15px;
+  width: 100%;
+  max-width: 500px;
+}
+
+.order-container h2 {
+  color: #8b5e3c;
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+form input,
+form textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 15px;
+  font-size: 16px;
+  border: 2px solid #8b5e3c;
+  border-radius: 10px;
+}
+
+form button {
+  background-color: #8b5e3c;
+  color: white;
+  border: none;
+  padding: 15px;
+  font-size: 18px;
+  font-weight: bold;
+  border-radius: 25px;
+  cursor: pointer;
+  width: 100%;
+}
+
+form button:hover {
+  background-color: #fff4cc;
+  color: #8b5e3c;
+}
+
+#orderMessage {
+  text-align: center;
+  font-weight: bold;
+  margin-top: 10px;
+  color: green;
+}

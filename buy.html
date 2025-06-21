@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Place Order - Rajaji DryFruits</title>
+  <link rel="stylesheet" href="buy.css" />
+</head>
+<body>
+
+  <div class="order-container">
+    <h2>Place Your Order</h2>
+    <form id="orderForm">
+      <input type="text" id="productName" name="productName" required />
+      <input type="number" name="quantity" placeholder="Enter quantity (kg)" required />
+      <textarea name="address" placeholder="Enter your address" required></textarea>
+      <input type="tel" name="phone" placeholder="Enter contact number" required />
+      <button type="submit">Place Order</button>
+      <p id="orderMessage"></p>
+    </form>
+    <p><b>"Enjoy free delivery anywhere in India!"</b></p>
+    <p>"Please note: If you cancel your order at the last minute, delivery charges may be applicable."</p>
+  </div>
+  
+
+  <script src="buy.js"></script>
+</body>
+</html>

@@ -1,0 +1,106 @@
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  
+  color: #333;
+  
+}
+
+header {
+  background: #8b5e3c;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  color: white;
+}
+
+header .name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+header .welcome{
+    font-weight: bold;
+    font-size: 24px;   
+}
+
+nav a {
+  color: white;
+  margin-left: 20px;
+  font-weight: 500;
+  font-size: 24px;
+  text-decoration:none;
+}
+
+nav a:hover{
+  
+  font-size: 25px;
+  font-style: italic;
+}
+.note {
+  text-align: center;
+  padding: 250px 20px;
+  background: url(bgi.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  color: white;
+  background-blend-mode:darken;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.note h1 {
+  font-size: 40px;
+  margin-bottom: 10px;
+}
+
+.note p {
+  font-size: 22px;
+  margin-bottom: 20px;
+}
+
+.btn {
+  background: #8b5e3c;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: bold;
+}
+
+.btn:hover{
+  background-color: #ffe6b3;
+  color: #8b5e3c;
+}
+
+.highlights {
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.features {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.feature {
+  background: #fff4cc;
+  padding: 20px;
+  border-radius: 15px;
+  width: 200px; 
+}
+
+footer {
+  text-align: center;
+  background: #8b5e3c;
+  color: white;
+  font-size: 20px;
+  margin-top: 50px;
+  padding: 20px;
+}

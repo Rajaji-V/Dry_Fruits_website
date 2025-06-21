@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <link rel="stylesheet" href="contact.css">
+</head>
+<body>
+    <section class="contact-section">
+    <div class="container">
+      <h2>Contact Us</h2>
+      <p>We'd love to hear from you. Send us a message or reach out via the details below.</p>
+
+      <div class="contact-box">
+        <div class="contact-info">
+          <h3>Get in Touch</h3>
+          <p><strong>Address:</strong> 123 Healthy Street, Nut City, India</p>
+          <p><strong>Email:</strong> contact@dryfruitstore.com</p>
+          <p><strong>Phone:</strong> +91 98765 43210</p>
+        </div>
+
+        <form class="contact-form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea rows="5" placeholder="Your Message" required></textarea>
+          <button type="submit">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector(".contact-form");
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+      const msg = document.createElement("p");
+      msg.textContent = "Message sent successfully!";
+      form.appendChild(msg);
+      form.reset();
+    });
+  });
+</script>
+
+</body>
+</html>
