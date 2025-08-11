@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Login | Signup - Rajaji DryFruits</title>
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+
+  <div class="auth-container">
+    <h2 id="form-title">Login to Rajaji DryFruits</h2>
+
+    <form id="authForm">
+      <input type="text" id="username" placeholder="Username" required />
+      <input type="password" id="password" placeholder="Password" required />
+      <button type="submit" id="authButton">Login</button>
+      <p id="auth-message"></p>
+    </form>
+
+    <p class="toggle-msg">
+      New user? <a href="#" id="toggleLink">Sign up here</a>
+    </p>
+  </div>
+
+  <script src="login.js"></script>
+</body>
+</html>
