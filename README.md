@@ -1,10 +1,10 @@
-# 🍇 Dry Fruits Shop Website
+#  Dry Fruits Shop Website
 
 A simple and clean **Dry Fruits & Nuts website** built using **HTML, CSS, and JavaScript**. This project showcases different dry fruits and nuts along with their nutritional details in a user-friendly layout.
 
 ---
 
-## 📌 Project Overview
+##  Project Overview
 
 This website is designed as a front-end project to display various dry fruits and nuts with:
 
@@ -16,7 +16,7 @@ It is suitable for **academic projects, mini-project submissions, and portfolio 
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 * **HTML5** – Structure of the website
 * **CSS3** – Styling and layout
@@ -24,7 +24,7 @@ It is suitable for **academic projects, mini-project submissions, and portfolio 
 
 ---
 
-## ✨ Features
+##  Features
 
 * Responsive and simple design
 * Displays dry fruits and nuts details
@@ -33,7 +33,7 @@ It is suitable for **academic projects, mini-project submissions, and portfolio 
 
 ---
 
-## 📂 Project Structure
+##  Project Structure
 
 ```
 Dry_Fruits_website/
@@ -47,7 +47,7 @@ Dry_Fruits_website/
 
 ---
 
-## 🚀 How to Run the Project
+##  How to Run the Project
 
 1. Clone the repository:
 
@@ -59,14 +59,14 @@ Dry_Fruits_website/
 
 ---
 
-## 🎓 Use Case
+##  Use Case
 
 * B.Tech / Engineering mini project
 * Front-end practice project
 
 ---
 
-## 📌 Future Enhancements
+##  Future Enhancements
 
 * Add search and filter options
 * Add login/signup functionality
@@ -74,11 +74,11 @@ Dry_Fruits_website/
 
 ---
 
-## 👤 Author
+##  Author
 
 **Rajaji V**
 B.Tech Student | Aspiring Software Engineer
 
 ---
 
-⭐ If you like this project, feel free to star the repository!
+ If you like this project, feel free to star the repository!
