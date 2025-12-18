@@ -1,0 +1,76 @@
+/* Login page styles aligned to site variables */
+.auth-container {
+  background-color: var(--bg-color);
+  padding: 24px 28px;
+  border-radius: var(--border-radius-md);
+  box-shadow: var(--shadow-sm);
+  width: 320px;
+  text-align: center;
+  margin: var(--spacing-xl) auto;
+}
+
+#form-title { margin-bottom: var(--spacing-md); color: var(--text-color); }
+
+form input {
+  width: 100%;
+  padding: 10px 12px;
+  margin: 10px 0;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 14px;
+  transition: border-color 0.2s;
+  background: transparent;
+  color: var(--text-color);
+}
+
+form input:focus { border-color: var(--primary-color); outline: none; }
+
+#authButton {
+  width: 100%;
+  padding: 10px;
+  margin-top: 10px;
+  background-color: var(--primary-color);
+  border: none;
+  color: white;
+  font-weight: 600;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+#authButton:hover { background-color: var(--primary-dark); }
+
+#auth-message { margin-top: 10px; color: var(--error-color); font-size: 14px; }
+
+.toggle-msg { margin-top: var(--spacing-md); font-size: 14px; }
+
+.toggle-msg a { color: var(--primary-color); text-decoration: none; font-weight: 600; }
+
+.toggle-msg a:hover { text-decoration: underline; }
+
+.auth-links {
+  margin-top: var(--spacing-lg);
+}
+
+.forgot-password {
+  margin-top: var(--spacing-sm);
+  font-size: 12px;
+}
+
+.forgot-password a {
+  color: var(--text-light);
+  text-decoration: none;
+}
+
+.forgot-password a:hover {
+  color: var(--primary-color);
+  text-decoration: underline;
+}
+
+/* Success message styling */
+#auth-message {
+  min-height: 20px;
+  margin-top: var(--spacing-md);
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.3s ease;
+}

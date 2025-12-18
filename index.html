@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Premium quality dry fruits and nuts - Fresh, Organic, and Direct from farms. Shop now for the best dry fruits online.">
+  <title>Dry Fruits | Premium Quality Dry Fruits & Nuts</title>
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" href="assets/css/styles.css" as="style">
+  <link rel="preload" href="assets/js/main.js" as="script">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="assets/images/favicon.png">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="assets/css/styles.css">
+  
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
+  <!-- Preconnect to external domains -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Skip to main content for better accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
+  <!-- Header with Navigation -->
+  <header class="main-header">
+    <div class="container">
+      <div class="header-container">
+        <div class="logo">
+          <a href="index.html" aria-label="Dry Fruits Home">
+            <span class="logo-icon">🌰</span>
+            <span class="logo-text">DryFruits</span>
+          </a>
+        </div>
+        
+        <!-- Mobile menu button (hidden on desktop) -->
+        <button class="mobile-menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span class="menu-icon"></span>
+        </button>
+        
+        <!-- Main Navigation -->
+        <nav class="main-nav" aria-label="Main navigation">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="index.html" class="nav-link active" aria-current="page">Home</a></li>
+            <li class="nav-item"><a href="pages/products.html" class="nav-link">Products</a></li>
+            <li class="nav-item"><a href="pages/about.html" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="pages/contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        
+        <!-- Header Actions -->
+        <div class="header-actions">
+          <button class="btn btn-icon" id="theme-toggle" aria-label="Toggle dark mode">
+            <i class="fas fa-moon"></i>
+          </button>
+          <a href="pages/cart.html" class="btn btn-icon cart-icon" aria-label="Shopping Cart">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+          </a>
+          <a href="pages/login.html" class="btn btn-outline">Login</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1 class="hero-title">Premium Dry Fruits for a Healthy Life</h1>
+          <p class="hero-subtitle">Fresh. Organic. Direct from farms.</p>
+          <div class="hero-cta">
+            <a href="pages/products.html" class="btn btn-primary">Shop Now</a>
+            <a href="#featured-products" class="btn btn-outline">View Specials</a>
+          </div>
+        </div>
+      </div>
+      <div class="hero-overlay"></div>
+      <div class="hero-image" style="background-image: url('assets/images/bgdf.jpg');"></div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+      <div class="container">
+        <h2 class="section-title">Why Choose Us?</h2>
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-leaf"></i>
+            </div>
+            <h3>100% Natural</h3>
+            <p>Pure, unprocessed dry fruits with no additives or preservatives.</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-truck"></i>
+            </div>
+            <h3>Fast Delivery</h3>
+            <p>Quick shipping to your doorstep with proper packaging.</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-shield-alt"></i>
+            </div>
+            <h3>Secure Payment</h3>
+            <p>100% secure payment options with SSL encryption.</p>
+          </div>
+          
+          <div class="feature-card">
+            <div class="feature-icon">
+              <i class="fas fa-medal"></i>
+            </div>
+            <h3>Premium Quality</h3>
+            <p>Handpicked and carefully selected premium dry fruits.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Featured Products -->
+    <section id="featured-products" class="products-section">
+      <div class="container">
+        <div class="section-header">
+          <h2 class="section-title">Featured Products</h2>
+          <a href="pages/products.html" class="btn-text">View All <i class="fas fa-arrow-right"></i></a>
+        </div>
+        <div class="products-grid" id="featured-products-grid">
+          <!-- Products will be loaded dynamically via JavaScript -->
+          <div class="skeleton-loader"></div>
+          <div class="skeleton-loader"></div>
+          <div class="skeleton-loader"></div>
+          <div class="skeleton-loader"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials-section">
+      <div class="container">
+        <h2 class="section-title">What Our Customers Say</h2>
+        <div class="testimonials-slider">
+          <!-- Testimonials will be loaded dynamically -->
+          <div class="testimonial">
+            <div class="testimonial-content">
+              <p>"The quality of dry fruits is exceptional! Fresh, tasty, and well-packaged. Will definitely order again."</p>
+            </div>
+            <div class="testimonial-author">
+              <div class="author-avatar">
+                <i class="fas fa-user"></i>
+              </div>
+              <div class="author-info">
+                <h4>Priya Sharma</h4>
+                <div class="rating">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter-section">
+      <div class="container">
+        <div class="newsletter-content">
+          <h2>Subscribe to Our Newsletter</h2>
+          <p>Get the latest updates, offers, and health tips delivered to your inbox.</p>
+          <form id="newsletter-form" class="newsletter-form">
+            <div class="form-group">
+              <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </div>
+            <div class="form-message"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-about">
+          <h3>DryFruits Home</h3>
+          <p>Providing premium quality dry fruits and nuts for a healthier lifestyle since 2010.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="pages/products.html">Products</a></li>
+            <li><a href="pages/about.html">About Us</a></li>
+            <li><a href="pages/contact.html">Contact</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Customer Service</h4>
+          <ul>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Order Tracking</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Returns & Refunds</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <ul class="contact-info">
+            <li><i class="fas fa-map-marker-alt"></i> 123 Dry Fruit St, City, State 123456</li>
+            <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+            <li><i class="fas fa-envelope"></i> info@dryfruits.com</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 DryFruits. All rights reserved.</p>
+        <div class="payment-methods">
+          <i class="fab fa-cc-visa" aria-label="Visa"></i>
+          <i class="fab fa-cc-mastercard" aria-label="Mastercard"></i>
+          <i class="fab fa-cc-paypal" aria-label="PayPal"></i>
+          <i class="fas fa-university" aria-label="Net Banking"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+
+  <!-- JavaScript -->
+  <script src="assets/js/main.js" type="module"></script>
+</body>
+</html>

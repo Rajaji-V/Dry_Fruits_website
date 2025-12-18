@@ -1,0 +1,80 @@
+/* Product page styles — use site variables and avoid global resets */
+.avail{
+  background: var(--primary-color);
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  color: #fff;
+  border-radius: var(--border-radius-md);
+}
+
+.Ap{ font-family: var(--font-primary); font-size: 20px; color: var(--bg-color); }
+
+.search-container{
+  display: flex;
+  justify-content: center;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 360px;
+  padding: 10px 15px;
+  border: 2px solid var(--primary-color);
+  border-radius: 25px 0 0 25px;
+  font-size: 16px;
+}
+
+.search-btn {
+  padding: 10px 20px;
+  background-color: var(--bg-color);
+  border: 2px solid var(--primary-color);
+  border-left: none;
+  border-radius: 0 25px 25px 0;
+  cursor:pointer;
+  font-size: 16px;
+  color: var(--primary-color);
+}
+.search-btn:hover{ background-color: var(--primary-light); color: #fff; }
+
+.container { padding-top: 32px; padding-bottom: 32px; }
+
+.card { border: none; border-radius: 16px; }
+
+.card:hover { transform: translateY(-6px); box-shadow: var(--shadow-md); }
+
+.card-img-top { height: 220px; object-fit: cover; border-top-left-radius: 16px; border-top-right-radius: 16px; }
+
+.card-text.text-success {
+  font-size: 19px; 
+}
+
+.card-title { font-size: 20px; font-weight: 600; color: var(--text-color); }
+
+.card-body p {
+  font-size: 15px; 
+  color: #555;
+}
+
+.but {
+  background-color: var(--primary-color);
+  color: #ffffff;
+  border-radius: 20px;
+  height: 40px;
+  width: 105px;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.but:hover { background-color: var(--primary-light); color: #fff; }
+
+@media (max-width: 576px) {
+  .card-text,
+  .card-title,
+  .card-body {
+    text-align: center;
+  }
+}
+
+
+

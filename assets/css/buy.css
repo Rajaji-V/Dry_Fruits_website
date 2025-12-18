@@ -1,0 +1,38 @@
+.order-container {
+  background: var(--bg-color);
+  padding: 32px;
+  border-radius: 12px;
+  width: 100%;
+  max-width: 540px;
+  margin: var(--spacing-xl) auto;
+  box-shadow: var(--shadow-sm);
+}
+
+.order-container h2 { color: var(--primary-color); text-align: center; margin-bottom: var(--spacing-lg); }
+
+form input, form textarea {
+  width: 100%;
+  margin: 10px 0;
+  padding: 12px;
+  font-size: 1rem;
+  border: 1px solid var(--border-color);
+  border-radius: 8px;
+  background: transparent;
+  color: var(--text-color);
+}
+
+form button {
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  padding: 12px;
+  font-size: 1rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  width: 100%;
+}
+
+form button:hover { background-color: var(--primary-dark); }
+
+#orderMessage { text-align: center; font-weight: bold; margin-top: 10px; color: var(--success-color); }

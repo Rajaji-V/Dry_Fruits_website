@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products - DryFruits</title>
+    <link rel="stylesheet" href="../assets/css/styles.css">
+    <link rel="stylesheet" href="../assets/css/product.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <div class="header-container">
+                <div class="logo">
+                    <a href="../index.html" aria-label="Dry Fruits Home">
+                        <span class="logo-icon">🌰</span>
+                        <span class="logo-text">DryFruits</span>
+                    </a>
+                </div>
+                <button class="mobile-menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+                    <span class="menu-icon"></span>
+                </button>
+                <nav class="main-nav" aria-label="Main navigation">
+                    <ul class="nav-list">
+                        <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+                        <li class="nav-item"><a href="product.html" class="nav-link active" aria-current="page">Products</a></li>
+                        <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+                        <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+                    </ul>
+                </nav>
+                <div class="header-actions">
+                    <button class="btn btn-icon" id="theme-toggle" aria-label="Toggle dark mode">
+                        <i class="fas fa-moon"></i>
+                    </button>
+                    <a href="cart.html" class="btn btn-icon cart-icon" aria-label="Shopping Cart">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </a>
+                    <a href="login.html" class="btn btn-outline">Login</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <header class="avail">
+        <div class="Ap">
+            <h1>Available Products...</h1>
+        </div>
+        <nav>
+            <div class="search-container">
+                <input type="text" placeholder="Search dry fruits..." class="search-input" id="search-products">
+                <button class="search-btn">🔍</button>
+            </div>
+        </nav>
+    </header>
+
+    <div class="container py-5">
+        <div class="row g-4">
+            <!-- Almonds -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="../assets/images/almonds.jpg" class="card-img-top" alt="Almonds">
+                    <div class="card-body">
+                        <h5 class="card-title">Premium Almonds</h5>
+                        <p class="card-text text-success fw-bold">₹600 / Kg</p>
+                        <p class="card-text">These almonds are fresh, crunchy, and full of natural goodness. A perfect healthy snack for your day. Imported from California.</p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="buy.html" class="btn-brown"><button class="but">Add to Cart</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Cashews -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="../assets/images/cashews.jpg" class="card-img-top" alt="Cashews">
+                    <div class="card-body">
+                        <h5 class="card-title">Cashew Nuts</h5>
+                        <p class="card-text text-success fw-bold">₹620 / Kg</p>
+                        <p class="card-text">Rich, buttery cashews roasted to perfection. A crunchy delight packed with healthy fats and protein.</p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="buy.html" class="btn-brown"><button class="but">Add to Cart</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pistachios -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="../assets/images/pista.jpg" class="card-img-top" alt="Pistachios">
+                    <div class="card-body">
+                        <h5 class="card-title">Pistachios</h5>
+                        <p class="card-text text-success fw-bold">₹640 / Kg</p>
+                        <p class="card-text">Premium-quality salted pistachios with a rich, nutty flavor. Great for heart health and tasty snacking.</p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="buy.html" class="btn-brown"><button class="but">Add to Cart</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dry Grapes Black -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="../assets/images/dryGrapesBlack.jpg" class="card-img-top" alt="Dry Grapes Black">
+                    <div class="card-body">
+                        <h5 class="card-title">Dry Grapes Black</h5>
+                        <p class="card-text text-success fw-bold">₹450 / Kg</p>
+                        <p class="card-text">Naturally sweet and sun-dried black raisins. Full of iron and antioxidants — a perfect energy booster.</p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="buy.html" class="btn-brown"><button class="but">Add to Cart</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Black Dates -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="../assets/images/blackdates.jpg" class="card-img-top" alt="Black Dates">
+                    <div class="card-body">
+                        <h5 class="card-title">Black Dates</h5>
+                        <p class="card-text text-success fw-bold">₹360 / Kg</p>
+                        <p class="card-text">Soft and chewy black dates rich in fiber and natural sweetness. A nutritious treat from desert farms.</p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="buy.html" class="btn-brown"><button class="but">Add to Cart</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Dry Kiwi -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="../assets/images/drykiwi.jpg" class="card-img-top" alt="Dry Kiwi">
+                    <div class="card-body">
+                        <h5 class="card-title">Dry Kiwi</h5>
+                        <p class="card-text text-success fw-bold">₹550 / Kg</p>
+                        <p class="card-text">Tangy-sweet dried kiwi slices packed with vitamin C. A colorful, chewy, and healthy snack.</p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="buy.html" class="btn-brown"><button class="but">Add to Cart</button></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Walnuts -->
+            <div class="col-md-4">
+                <div class="card h-100">
+                    <img src="../assets/images/walnut.jpg" class="card-img-top" alt="Walnuts">
+                    <div class="card-body">
+                        <h5 class="card-title">Walnuts</h5>
+                        <p class="card-text text-success fw-bold">₹470 / Kg</p>
+                        <p class="card-text">Brain-boosting walnuts loaded with omega-3. Crispy, earthy flavor and great for your heart and mind.</p>
+                    </div>
+                    <div class="card-footer text-center">
+                        <a href="buy.html" class="btn-brown"><button class="but">Add to Cart</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-about">
+                    <h3>DryFruits</h3>
+                    <p>Providing premium quality dry fruits and nuts for a healthier lifestyle since 2010.</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../index.html">Home</a></li>
+                        <li><a href="product.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 DryFruits. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="../assets/js/main.js" type="module"></script>
+    <script>
+        // Add to cart functionality
+        document.querySelectorAll('.but').forEach(button => {
+            button.addEventListener('click', function() {
+                const productCard = this.closest('.card');
+                const productName = productCard.querySelector('.card-title').textContent;
+                const productPriceText = productCard.querySelector('.text-success').textContent;
+                const productPrice = parseInt(productPriceText.replace('₹', '').replace(' / Kg', ''));
+                const productImage = productCard.querySelector('img').src;
+
+                // Use the global addToCart function from main.js
+                if (window.DryFruitsApp && window.DryFruitsApp.addToCart) {
+                    window.DryFruitsApp.addToCart({
+                        id: Date.now(), // Simple ID generation
+                        name: productName,
+                        price: productPrice,
+                        image: productImage,
+                        category: 'general',
+                        quantity: 1
+                    });
+                } else {
+                    // Fallback: store product info and redirect to buy page
+                    localStorage.setItem('selectedProduct', JSON.stringify({
+                        name: productName,
+                        price: productPrice,
+                        image: productImage
+                    }));
+                    window.location.href = 'buy.html';
+                }
+            });
+        });
+    </script>
+</body>
+</html>

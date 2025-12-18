@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Browse our wide selection of premium dry fruits and nuts. Find almonds, cashews, pistachios, walnuts, and more at the best prices.">
+  <title>Products - Dry Fruits | Premium Quality Dry Fruits & Nuts</title>
+  
+  <!-- Preload critical resources -->
+  <link rel="preload" href="../assets/css/styles.css" as="style">
+  <link rel="preload" href="../assets/js/main.js" as="script">
+  <link rel="preload" href="../assets/js/products.js" as="script">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="../assets/images/favicon.png">
+  
+  <!-- CSS -->
+  <link rel="stylesheet" href="../assets/css/styles.css">
+  
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Skip to main content for better accessibility -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+  
+  <!-- Header with Navigation -->
+  <header class="main-header">
+    <div class="container">
+      <div class="header-container">
+        <div class="logo">
+          <a href="../index.html" aria-label="Dry Fruits Home">
+            <span class="logo-icon">🌰</span>
+            <span class="logo-text">DryFruits</span>
+          </a>
+        </div>
+        
+        <!-- Mobile menu button (hidden on desktop) -->
+        <button class="mobile-menu-toggle" aria-label="Toggle navigation" aria-expanded="false">
+          <span class="menu-icon"></span>
+        </button>
+        
+        <!-- Main Navigation -->
+        <nav class="main-nav" aria-label="Main navigation">
+          <ul class="nav-list">
+            <li class="nav-item"><a href="../index.html" class="nav-link">Home</a></li>
+            <li class="nav-item"><a href="products.html" class="nav-link active" aria-current="page">Products</a></li>
+            <li class="nav-item"><a href="about.html" class="nav-link">About Us</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
+          </ul>
+        </nav>
+        
+        <!-- Header Actions -->
+        <div class="header-actions">
+          <button class="btn btn-icon" id="theme-toggle" aria-label="Toggle dark mode">
+            <i class="fas fa-moon"></i>
+          </button>
+          <a href="cart.html" class="btn btn-icon cart-icon" aria-label="Shopping Cart">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+          </a>
+          <a href="login.html" class="btn btn-outline">Login</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content">
+    <!-- Page Header -->
+    <section class="page-header">
+      <div class="container">
+        <h1>Our Premium Dry Fruits</h1>
+        <nav aria-label="Breadcrumb" class="breadcrumb">
+          <ol>
+            <li><a href="../index.html">Home</a></li>
+            <li>Products</li>
+          </ol>
+        </nav>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section">
+      <div class="container">
+        <div class="products-header">
+          <div class="products-filter">
+            <div class="filter-group">
+              <label for="category-filter">Category:</label>
+              <select id="category-filter" class="form-select">
+                <option value="all">All Categories</option>
+                <option value="nuts">Nuts</option>
+                <option value="dried-fruits">Dried Fruits</option>
+                <option value="seeds">Seeds</option>
+                <option value="mixes">Mixes</option>
+              </select>
+            </div>
+            
+            <div class="filter-group">
+              <label for="sort-by">Sort By:</label>
+              <select id="sort-by" class="form-select">
+                <option value="featured">Featured</option>
+                <option value="price-low">Price: Low to High</option>
+                <option value="price-high">Price: High to Low</option>
+                <option value="name-asc">Name: A to Z</option>
+                <option value="name-desc">Name: Z to A</option>
+              </select>
+            </div>
+            
+            <div class="filter-group search-group">
+              <input type="text" id="search-products" placeholder="Search products...">
+              <button type="button" class="btn btn-icon">
+                <i class="fas fa-search"></i>
+              </button>
+            </div>
+          </div>
+          
+          <div class="products-view-options">
+            <button class="btn btn-icon view-option active" data-view="grid" aria-label="Grid view">
+              <i class="fas fa-th"></i>
+            </button>
+            <button class="btn btn-icon view-option" data-view="list" aria-label="List view">
+              <i class="fas fa-list"></i>
+            </button>
+          </div>
+        </div>
+        
+        <div class="products-container">
+          <aside class="products-sidebar">
+            <div class="sidebar-widget">
+              <h3>Categories</h3>
+              <ul class="category-list">
+                <li><a href="#" class="active" data-category="all">All Products</a></li>
+                <li><a href="#" data-category="almonds">Almonds</a></li>
+                <li><a href="#" data-category="cashews">Cashews</a></li>
+                <li><a href="#" data-category="pistachios">Pistachios</a></li>
+                <li><a href="#" data-category="walnuts">Walnuts</a></li>
+                <li><a href="#" data-category="dates">Dates</a></li>
+                <li><a href="#" data-category="raisins">Raisins</a></li>
+                <li><a href="#" data-category="apricots">Apricots</a></li>
+                <li><a href="#" data-category="mix">Mixed Nuts</a></li>
+              </ul>
+            </div>
+            
+            <div class="sidebar-widget">
+              <h3>Price Range</h3>
+              <div class="price-range">
+                <div id="price-slider"></div>
+                <div class="price-inputs">
+                  <div class="form-group">
+                    <label for="min-price">Min</label>
+                    <input type="number" id="min-price" min="0" max="1000" value="0">
+                  </div>
+                  <div class="form-group">
+                    <label for="max-price">Max</label>
+                    <input type="number" id="max-price" min="0" max="1000" value="100">
+                  </div>
+                </div>
+                <button class="btn btn-primary btn-block" id="apply-price-filter">Apply</button>
+              </div>
+            </div>
+            
+            <!-- Special Offers removed to keep sidebar focused -->
+          </aside>
+          
+          <div class="products-main">
+            <div class="products-meta">
+              <p class="results-count">Showing <span id="showing-count">1-12</span> of <span id="total-count">24</span> products</p>
+              <div class="pagination">
+                <button class="btn btn-icon" id="prev-page" disabled>
+                  <i class="fas fa-chevron-left"></i>
+                </button>
+                <span class="page-info">Page <span id="current-page">1</span> of <span id="total-pages">2</span></span>
+                <button class="btn btn-icon" id="next-page">
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+            
+            <div class="products-grid" id="products-grid">
+              <!-- Products will be loaded dynamically via JavaScript -->
+              <div class="skeleton-loader"></div>
+              <div class="skeleton-loader"></div>
+              <div class="skeleton-loader"></div>
+              <div class="skeleton-loader"></div>
+              <div class="skeleton-loader"></div>
+              <div class="skeleton-loader"></div>
+              <div class="skeleton-loader"></div>
+              <div class="skeleton-loader"></div>
+            </div>
+            
+            <div class="products-meta bottom">
+              <div class="pagination">
+                <button class="btn btn-icon" id="prev-page-bottom" disabled>
+                  <i class="fas fa-chevron-left"></i>
+                </button>
+                <div class="page-numbers">
+                  <button class="page-number active">1</button>
+                  <button class="page-number">2</button>
+                  <button class="page-number">3</button>
+                  <span class="ellipsis">...</span>
+                  <button class="page-number">5</button>
+                </div>
+                <button class="btn btn-icon" id="next-page-bottom">
+                  <i class="fas fa-chevron-right"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    
+    <!-- Newsletter Section -->
+    <section class="newsletter-section">
+      <div class="container">
+        <div class="newsletter-content">
+          <h2>Subscribe to Our Newsletter</h2>
+          <p>Get the latest updates, offers, and health tips delivered to your inbox.</p>
+          <form id="newsletter-form" class="newsletter-form">
+            <div class="form-group">
+              <input type="email" id="newsletter-email" placeholder="Enter your email" required>
+              <button type="submit" class="btn btn-primary">Subscribe</button>
+            </div>
+            <div class="form-message"></div>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+  
+  <!-- Footer -->
+  <footer class="main-footer">
+    <div class="container">
+      <div class="footer-content">
+        <div class="footer-about">
+          <h3>DryFruits</h3>
+          <p>Providing premium quality dry fruits and nuts for a healthier lifestyle since 2010.</p>
+          <div class="social-links">
+            <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+            <a href="#" aria-label="Pinterest"><i class="fab fa-pinterest"></i></a>
+          </div>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Quick Links</h4>
+          <ul>
+            <li><a href="../index.html">Home</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="about.html">About Us</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="#">Blog</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-links">
+          <h4>Customer Service</h4>
+          <ul>
+            <li><a href="#">My Account</a></li>
+            <li><a href="#">Order Tracking</a></li>
+            <li><a href="#">Shipping Policy</a></li>
+            <li><a href="#">Returns & Refunds</a></li>
+            <li><a href="#">FAQs</a></li>
+          </ul>
+        </div>
+        
+        <div class="footer-contact">
+          <h4>Contact Us</h4>
+          <ul class="contact-info">
+            <li><i class="fas fa-map-marker-alt"></i> 123 Dry Fruit St, City, State 123456</li>
+            <li><i class="fas fa-phone"></i> +91 98765 43210</li>
+            <li><i class="fas fa-envelope"></i> info@dryfruits.com</li>
+          </ul>
+        </div>
+      </div>
+      
+      <div class="footer-bottom">
+        <p>&copy; 2025 DryFruits. All rights reserved.</p>
+        <div class="payment-methods">
+          <i class="fab fa-cc-visa" aria-label="Visa"></i>
+          <i class="fab fa-cc-mastercard" aria-label="Mastercard"></i>
+          <i class="fab fa-cc-paypal" aria-label="PayPal"></i>
+          <i class="fas fa-university" aria-label="Net Banking"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+  <!-- Back to Top Button -->
+  <button id="back-to-top" class="back-to-top" aria-label="Back to top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+  
+  <!-- JavaScript -->
+  <script src="../assets/js/main.js" type="module"></script>
+  <script src="../assets/js/products.js" type="module"></script>
+</body>
+</html>
