@@ -13,7 +13,6 @@ const couponCodeInput = document.getElementById('coupon-code');
 const couponRow = document.querySelector('.coupon-row');
 const couponDiscountEl = document.getElementById('coupon-discount');
 const shippingEl = document.getElementById('shipping');
-const relatedProductsGrid = document.getElementById('related-products');
 
 // State
 let cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
@@ -33,10 +32,7 @@ const COUPONS = {
 document.addEventListener('DOMContentLoaded', () => {
     // Load cart items
     loadCartItems();
-    
-    // Load related products
-    loadRelatedProducts();
-    
+
     // Initialize event listeners
     initEventListeners();
 });
@@ -343,123 +339,6 @@ function updateItemCount() {
     }
 }
 
-// Load related products
-function loadRelatedProducts() {
-    if (!relatedProductsGrid) return;
-    
-    // In a real app, you would fetch related products from an API
-    // For now, we'll use sample data
-    const relatedProducts = [
-        {
-            id: 5,
-            name: 'Hazelnuts',
-            price: 10.99,
-            image: '../assets/images/hazelnuts.jpg',
-            description: 'Rich and flavorful hazelnuts, perfect for baking or snacking.'
-        },
-        {
-            id: 6,
-            name: 'Pecans',
-            price: 13.99,
-            image: '../assets/images/pecans.jpg',
-            description: 'Buttery and delicious pecans, great for pies and desserts.'
-        },
-        {
-            id: 7,
-            name: 'Brazil Nuts',
-            price: 11.99,
-            image: '../assets/images/brazil-nuts.jpg',
-            description: 'Creamy and nutritious Brazil nuts, packed with selenium.'
-        },
-        {
-            id: 8,
-            name: 'Macadamia Nuts',
-            price: 17.99,
-            image: '../assets/images/macadamia.jpg',
-            description: 'Buttery and rich macadamia nuts, a true indulgence.'
-        }
-    ];
-    
-    // Clear existing content
-    relatedProductsGrid.innerHTML = '';
-    
-    // Add related products to the grid
-    relatedProducts.forEach(product => {
-        const productCard = createRelatedProductCard(product);
-        relatedProductsGrid.appendChild(productCard);
-    });
-}
-
-// Create a related product card
-function createRelatedProductCard(product) {
-    const card = document.createElement('div');
-    card.className = 'product-card related-product';
-    
-    card.innerHTML = `
-        <div class="product-image">
-            <img src="${product.image}" alt="${product.name}" loading="lazy">
-            <div class="product-actions">
-                <button class="btn btn-icon quick-view" data-product-id="${product.id}" aria-label="Quick view">
-                    <i class="fas fa-eye"></i>
-                </button>
-                <button class="btn btn-icon add-to-wishlist" data-product-id="${product.id}" aria-label="Add to wishlist">
-                    <i class="far fa-heart"></i>
-                </button>
-            </div>
-        </div>
-        <div class="product-info">
-            <h3 class="product-title">${product.name}</h3>
-            <p class="product-description">${product.description}</p>
-            <div class="product-footer">
-                <div class="product-price">$${product.price.toFixed(2)}</div>
-                <button class="btn btn-primary add-to-cart" data-product='${JSON.stringify(product)}'>
-                    <i class="fas fa-shopping-cart"></i> Add to Cart
-                </button>
-            </div>
-        </div>
-    `;
-    
-    // Add event listener to the Add to Cart button
-    const addToCartBtn = card.querySelector('.add-to-cart');
-    if (addToCartBtn) {
-        addToCartBtn.addEventListener('click', (e) => {
-            const productData = JSON.parse(e.target.getAttribute('data-product'));
-            addToCart({ ...productData, quantity: 1 });
-        });
-    }
-    
-    return card;
-}
-
-// Add item to cart (for related products)
-function addToCart(product) {
-    // Check if product is already in cart
-    const existingItem = cartItems.find(item => item.id === product.id);
-    
-    if (existingItem) {
-        existingItem.quantity += product.quantity || 1;
-    } else {
-        cartItems.push({
-            ...product,
-            quantity: product.quantity || 1
-        });
-    }
-    
-    // Save to localStorage
-    saveCart();
-    
-    // Update UI
-    if (cartItemsList.querySelector('.empty-cart')) {
-        loadCartItems();
-    } else {
-        // If cart is not empty, just update the count and summary
-        updateItemCount();
-        updateCartSummary();
-    }
-    
-    // Show success message
-    showNotification('Product added to cart!', 'success');
-}
 
 // Show notification
 function showNotification(message, type = 'success') {
@@ -501,8 +380,7 @@ window.DryFruitsCart = {
     updateQuantity,
     removeItem,
     updateCartSummary,
-    saveCart,
-    addToCart
+    saveCart
 };
 
 // Initialize the cart when the page loads
