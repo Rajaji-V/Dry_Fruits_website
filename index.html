@@ -26,7 +26,7 @@
 </head>
 <body>
   <!-- Skip to main content for better accessibility -->
-  <a href="#main-content" class="skip-link">Skip to main content</a>
+  <a href="#main-content" class="skip-link" style="position:absolute; left:-999px; top:auto; width:1px; height:1px; overflow:hidden;">Skip to main content</a>
   
   <!-- Header with Navigation -->
   <header class="main-header">
@@ -63,7 +63,7 @@
             <i class="fas fa-shopping-cart"></i>
             <span class="cart-count">0</span>
           </a>
-          <a href="pages/login.html" class="btn btn-outline">Login</a>
+          <a href="pages/login.html" class="btn btn-outline" style="padding: 0.5rem 1.5rem; border-radius: 999px;">Login</a>
         </div>
       </div>
     </div>
@@ -72,26 +72,29 @@
   <main id="main-content">
     <!-- Hero Section -->
     <section class="hero">
+      <div class="hero-image">
+        <img src="assets/images/bgdf.jpg" alt="Assorted dry fruits background">
+      </div>
+      <div class="hero-overlay"></div>
+      
       <div class="container">
         <div class="hero-content">
           <h1 class="hero-title">Premium Dry Fruits for a Healthy Life</h1>
-          <p class="hero-subtitle">Fresh. Organic. Direct from farms.</p>
+          <p class="hero-subtitle">Experience the finest selection of organic dry fruits, sourced directly from the best farms worldwide.</p>
           <div class="hero-cta">
-            <a href="pages/products.html" class="btn btn-primary">Shop Now</a>
+            <a href="pages/products.html" class="btn btn-primary">Shop Now <i class="fas fa-arrow-right"></i></a>
             <a href="#featured-products" class="btn btn-outline">View Specials</a>
           </div>
         </div>
       </div>
-      <div class="hero-overlay"></div>
-      <div class="hero-image" style="background-image: url('assets/images/bgdf.jpg');"></div>
     </section>
 
     <!-- Features Section -->
-    <section class="features-section">
+    <section class="features-section animate-on-scroll">
       <div class="container">
         <h2 class="section-title">Why Choose Us?</h2>
         <div class="features-grid">
-          <div class="feature-card">
+          <div class="feature-card animate-on-scroll" style="transition-delay: 0.1s;">
             <div class="feature-icon">
               <i class="fas fa-leaf"></i>
             </div>
@@ -99,35 +102,35 @@
             <p>Pure, unprocessed dry fruits with no additives or preservatives.</p>
           </div>
           
-          <div class="feature-card">
+          <div class="feature-card animate-on-scroll" style="transition-delay: 0.2s;">
             <div class="feature-icon">
               <i class="fas fa-truck"></i>
             </div>
             <h3>Fast Delivery</h3>
-            <p>Quick shipping to your doorstep with proper packaging.</p>
+            <p>Quick shipping to your doorstep with premium protective packaging.</p>
           </div>
           
-          <div class="feature-card">
+          <div class="feature-card animate-on-scroll" style="transition-delay: 0.3s;">
             <div class="feature-icon">
               <i class="fas fa-shield-alt"></i>
             </div>
             <h3>Secure Payment</h3>
-            <p>100% secure payment options with SSL encryption.</p>
+            <p>100% secure payment options with SSL encryption and buyer protection.</p>
           </div>
           
-          <div class="feature-card">
+          <div class="feature-card animate-on-scroll" style="transition-delay: 0.4s;">
             <div class="feature-icon">
               <i class="fas fa-medal"></i>
             </div>
             <h3>Premium Quality</h3>
-            <p>Handpicked and carefully selected premium dry fruits.</p>
+            <p>Handpicked and carefully selected premium dry fruits from top orchards.</p>
           </div>
         </div>
       </div>
     </section>
 
     <!-- Featured Products -->
-    <section id="featured-products" class="products-section">
+    <section id="featured-products" class="products-section animate-on-scroll">
       <div class="container">
         <div class="section-header">
           <h2 class="section-title">Featured Products</h2>
@@ -144,14 +147,14 @@
     </section>
 
     <!-- Testimonials -->
-    <section class="testimonials-section">
+    <section class="testimonials-section animate-on-scroll">
       <div class="container">
         <h2 class="section-title">What Our Customers Say</h2>
         <div class="testimonials-slider">
           <!-- Testimonials will be loaded dynamically -->
           <div class="testimonial">
             <div class="testimonial-content">
-              <p>"The quality of dry fruits is exceptional! Fresh, tasty, and well-packaged. Will definitely order again."</p>
+              <p>"The quality of these dry fruits is exceptional! I've never tasted almonds this fresh before. The packaging was beautiful and delivery was super fast. Will definitely order again."</p>
             </div>
             <div class="testimonial-author">
               <div class="author-avatar">
@@ -174,16 +177,14 @@
     </section>
 
     <!-- Newsletter -->
-    <section class="newsletter-section">
+    <section class="newsletter-section animate-on-scroll">
       <div class="container">
         <div class="newsletter-content">
           <h2>Subscribe to Our Newsletter</h2>
-          <p>Get the latest updates, offers, and health tips delivered to your inbox.</p>
+          <p>Get the latest updates, exclusive offers, and health tips delivered to your inbox.</p>
           <form id="newsletter-form" class="newsletter-form">
-            <div class="form-group">
-              <input type="email" id="newsletter-email" placeholder="Enter your email" required>
-              <button type="submit" class="btn btn-primary">Subscribe</button>
-            </div>
+            <input type="email" id="newsletter-email" placeholder="Enter your email address" required>
+            <button type="submit" class="btn btn-primary">Subscribe</button>
             <div class="form-message"></div>
           </form>
         </div>
@@ -197,7 +198,7 @@
       <div class="footer-content">
         <div class="footer-about">
           <h3>DryFruits Home</h3>
-          <p>Providing premium quality dry fruits and nuts for a healthier lifestyle since 2010.</p>
+          <p>Providing premium quality dry fruits and nuts for a healthier lifestyle since 2010. We believe in quality, freshness, and customer satisfaction.</p>
           <div class="social-links">
             <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
             <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
@@ -230,17 +231,17 @@
         
         <div class="footer-contact">
           <h4>Contact Us</h4>
-          <ul class="contact-info">
-            <li><i class="fas fa-map-marker-alt"></i> 123 Dry Fruit St, City, State 123456</li>
-            <li><i class="fas fa-phone"></i> +91 98765 43210</li>
-            <li><i class="fas fa-envelope"></i> info@dryfruits.com</li>
+          <ul class="contact-info" style="list-style:none;">
+            <li style="margin-bottom:0.5rem; color:#94a3b8;"><i class="fas fa-map-marker-alt" style="margin-right:0.5rem; color: var(--primary-color);"></i> 123 Dry Fruit St, City, State 123456</li>
+            <li style="margin-bottom:0.5rem; color:#94a3b8;"><i class="fas fa-phone" style="margin-right:0.5rem; color: var(--primary-color);"></i> +91 98765 43210</li>
+            <li style="margin-bottom:0.5rem; color:#94a3b8;"><i class="fas fa-envelope" style="margin-right:0.5rem; color: var(--primary-color);"></i> info@dryfruits.com</li>
           </ul>
         </div>
       </div>
       
       <div class="footer-bottom">
         <p>&copy; 2025 DryFruits. All rights reserved.</p>
-        <div class="payment-methods">
+        <div class="payment-methods" style="font-size: 1.5rem; display: flex; gap: 1rem;">
           <i class="fab fa-cc-visa" aria-label="Visa"></i>
           <i class="fab fa-cc-mastercard" aria-label="Mastercard"></i>
           <i class="fab fa-cc-paypal" aria-label="PayPal"></i>
