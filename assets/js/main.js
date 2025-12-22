@@ -410,3 +410,10 @@ window.DryFruitsApp = {
 };
 
 export { addToCart, updateCartCount, showNotification, logoutUser };
+
+if ('serviceWorker' in navigator) {
+    window.addEventListener('load', () => {
+        const swPath = window.location.pathname.includes('/pages/') ? '../sw.js' : './sw.js';
+        navigator.serviceWorker.register(swPath).catch(() => { });
+    });
+}
